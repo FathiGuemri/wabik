@@ -1,0 +1,18 @@
+.testimonials {
+    @extend %padding-section;
+    h5 {
+        color: $mainClr;
+    }
+    .tem-img {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 50%;
+        position: relative;
+        img {
+            width: 376px;
+            position: absolute;
+            left: -61px;
+        }
+    } 
+}

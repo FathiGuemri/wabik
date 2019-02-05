@@ -1,0 +1,31 @@
+%padding-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+@media (max-width: 767px){
+    %padding-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    %padding-sm-b {
+        padding-bottom: 35px;
+    }
+}
+%colorText {
+    color: $textColor;
+}
+%overlay {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+%ovr-bg-clr {
+    background: rgba($overClr,  .91);
+    @include value-prefixer(background, -webkit-gradient(linear, left top, left bottom, from(rgba($overClr,  .91)), to(rgba(#c1d3d2,  .91))));
+} 

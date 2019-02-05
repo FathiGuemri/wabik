@@ -1,0 +1,33 @@
+header {
+    height: 100vh;
+    background: url('../img/bg-head.jpg');
+    position: relative;
+    .overlay {
+        @extend %overlay;
+        @extend %ovr-bg-clr;
+    }
+    .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-head {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        h1 { 
+           margin-left: 0; 
+           margin-right: 0;
+        }
+        p {
+            max-width: 500px;
+            margin-bottom: 40px;
+        }
+        .btn {
+            background-color: $mainClr;
+            padding: 8px 25px;
+            color: #fff;
+        }
+    }
+}

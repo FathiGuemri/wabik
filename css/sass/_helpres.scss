@@ -1,0 +1,47 @@
+:root {
+    --mainClr: #6fb048;
+    --secondClr: #0f5f5c;
+    --pragraphClr: #83a7a5;
+    --textColor: #c1d3d2;
+    --bgClr: #eef1ec;
+    --dir: ltr;
+}
+$overClr: #0f5f5c;
+$mainClr: var(--mainClr);
+$secondClr: var(--secondClr);
+$pragraphClr: var(--pragraphClr);
+$textColor: var(--textColor);
+$bgClr: var(--bgClr);
+$dir: ltr;
+p {
+    color: #82b1ae;
+}
+h2,
+h3,
+h4,
+h5{
+    color: $pragraphClr;
+}
+// ¤¤¤¤¤ start My fremwork ¤¤¤¤¤
+.head-section {
+    margin-bottom: 60px;
+    h2{
+        color: $secondClr;
+        position: relative;
+        &::after {
+            content: '';
+            width: 80px;
+            margin: 24px auto 20px;
+            display: block;
+            height: 1px;
+            background: $mainClr;
+        }
+    }
+    p {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        color: $pragraphClr;
+    }
+}
+// ¤¤¤¤¤ end My fremwork ¤¤¤¤¤

@@ -1,0 +1,84 @@
+@import "sass/helpres";
+
+@import "sass/core/bourbon";
+
+
+
+body {
+        height: 6000px;
+        font-family: Tahoma, Geneva, Verdana;
+    }
+
+
+// ¤¤¤¤¤ start navbar ¤¤¤¤¤
+.navbar {
+    background-color: rgba(#83a7a5,  .91);
+    box-shadow: 0px 0px 10px $bgClr;
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 28px;
+        color: #fff;
+        position: relative;
+        &::after {
+            content: '';
+            display: inline-block;
+            border-right: 1px solid #ccc;
+            margin-left: 30px;
+            height: 20px;
+        }
+    }
+    .navbar-toggler {
+        outline: none;
+        border: none;
+    }
+    @media (max-width: 992px) {
+        .nav-bottom {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(#83a7a5,  .91);
+        }
+    }
+    .phone {
+        color: #fff;
+        position: relative;
+        left: -202px; 
+        .fa-phone {
+            @extend %colorText;
+        } 
+    }
+    .navbar-nav {
+        .nav-link {
+            color: #ccc;
+        }
+    } 
+    .btn {
+        background-color: $pragraphClr;
+        color:#fff;
+    }
+}
+// ¤¤¤¤¤ end navbar ¤¤¤¤¤
+
+// ¤¤¤¤¤ start Page Home ¤¤¤¤¤
+// start headar
+@import "sass/home/header";
+// end headar
+// start features
+@import "sass/home/features";
+// end features
+
+// start our maide 
+@import "sass/home/maide";
+// end our maide 
+// start our testimonials 
+@import "sass/home/testimonials";
+// end our testimonials 
+// ¤¤¤¤¤ end Page Home ¤¤¤¤¤
+// start our testimonials 
+@import "sass/home/details";
+// end our testimonials 
+// ¤¤¤¤¤ end Page Home ¤¤¤¤¤
+// start globle
+@import "sass/globle";
+// end globle

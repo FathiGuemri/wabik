@@ -1,0 +1,13 @@
+.navbar-light .navbar-brand::after {
+  margin-right: 30px;
+}
+
+.navbar-light .btn {
+  margin-right: 20px;
+}
+
+.testimonials .tem-img img {
+  left: auto;
+  right: -61px;
+}
+/*# sourceMappingURL=style-rtl.css.map */

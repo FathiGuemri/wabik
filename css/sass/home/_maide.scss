@@ -1,0 +1,49 @@
+.maide {
+    @extend %padding-section;
+    padding-bottom: 0 !important;
+    min-height: 600px;
+    background: $bgClr; 
+    @include value-prefixer(background, gradient(linear, left top, left bottom, from($bgClr), to(#c1d3d2)));
+
+    .phone {
+        height: 518px;
+        width: 462px;
+        background: url("../img/Hand.png") no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 2;
+        img {
+            width: 39%;
+            position: absolute;
+            left: 213px;
+            top: 33px;
+            z-index: 2;
+        }
+    }
+    .info {
+        
+        margin-top: 100px;
+        @media (max-width: 991px) {
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+        h3 {
+            margin-bottom: 15px;;
+        }
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+            i {
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+                color: $mainClr;
+                border: 1px solid $mainClr;
+                border-radius: 50%;
+                text-align: center;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

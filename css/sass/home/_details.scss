@@ -1,0 +1,11 @@
+.details {
+    @extend %padding-section;
+    background: #c1d3d2;
+    @include value-prefixer(background, gradient(linear, left top, left bottom, from(#c1d3d2), to($bgClr)));
+    img {
+        width: 100%;
+    }
+    p {
+        line-height: 1.5;
+    }
+}

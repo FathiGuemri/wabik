@@ -1,0 +1,37 @@
+.features {
+    @extend %padding-section;
+    .info {
+        @extend %padding-sm-b;
+        img {
+            margin-bottom: 25px;
+        }
+    }
+    .line {
+        background-color: $mainClr;
+        margin: 0 auto;
+    }
+    .line1{
+        margin-top: 20px;
+        width: 2px;
+        height: 100px;
+    }
+    .line2{
+        margin-bottom: 20px;
+        width: 100px;
+        height: 2px;
+    }
+    .bast {
+        margin-top: 35px;
+        i {
+        color: $mainClr;
+        }
+     h5 {
+        margin-top: 10px;
+        }
+    p {
+        margin-top: 15px;
+    }
+
+    }
+    
+}
